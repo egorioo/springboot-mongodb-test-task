@@ -7,6 +7,8 @@ import org.springframework.data.mongodb.core.mapping.Field;
 
 @Document(collection = "Users")
 public class User {
+    //the name as an ID isn't the best option,
+    //but there should be only two fields in the requirements
     @Id
     private String name;
 

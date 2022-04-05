@@ -19,10 +19,10 @@ public class UserController {
     @Autowired
     public UserController(UserRepository repository) {
         this.repository = repository;
-        //test example
-        repository.save(new User("first", "first"));
-        repository.save(new User("second", "second"));
-        repository.save(new User("third", "third"));
+        //test case
+        repository.save(new User("first", "first@mail.com"));
+        repository.save(new User("second", "second@mail.com"));
+        repository.save(new User("third", "third@mail.com"));
     }
 
     @GetMapping()
